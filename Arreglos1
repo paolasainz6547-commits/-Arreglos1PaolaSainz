@@ -18,3 +18,44 @@ int main()
 
     return 0;
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float temp[4];
+    float temp1, temp2;
+    int i, dummy;
+
+
+    temp[0]=20.5;
+    temp[1]=19.2;
+
+
+    //printf ("Direccion de memoria de 2 flotantes: &temp1: %i, \n&temp2 %i!\n", &temp1, &temp2);
+    //printf ("Direccion de temp[24]: %i,\n", temp);
+    //printf ("Direccion de &temp[23]: %i,\n", &temp[23]);
+    //printf ("Direccion de &dummy: %i\n", &dummy);
+
+    printf ("Temp [0] es igual a: %.2f\n", temp[0]); //Acceso a elementos del arreglo
+    printf ("Temp [1] es igual a:%.2f\n", temp[1]);
+
+
+    for (int i=0; i<4; i++)
+    {
+        printf ("Ingrese las temperaturas %f", i+1);
+        scanf ("%f", &temp[i]);
+    }
+
+
+    for (int i=0; i<4; i++)
+    {
+        printf("Las temperaturas son: &d: %d\n", i+1, temp[i]);
+
+    }
+
+
+    return 0;
+}
